@@ -121,7 +121,11 @@ footer {
   .footer_up {
     background-image: url("./assets/img/footer-bg.jpg");
     background-size: cover;
-    height: 500px;
+    height: 400px;
+    img {
+      position: relative;
+      bottom: 15%;
+    }
   }
 
   .footer_down {
