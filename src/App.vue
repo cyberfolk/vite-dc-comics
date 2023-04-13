@@ -36,6 +36,42 @@ export default {
     </div>
     <!-- /.container -->
   </header>
+
+  <main>
+    <section class="content"></section>
+    <section class="banner"></section>
+  </main>
+
+  <footer>
+    <div class="footer_up">
+      <div class="container">
+        <div class="row">
+          <div class="col-6"></div>
+          <!-- /.col-6 -->
+          <div class="col-6">
+            <img src="./assets/img/dc-logo-bg.png" alt="" />
+          </div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.footer_up -->
+    <div class="footer_down mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-6"></div>
+          <!-- /.col-6 -->
+          <div class="col-6"></div>
+          <!-- /.col-6 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.footer_down -->
+  </footer>
 </template>
 
 <style lang="scss">
@@ -64,6 +100,35 @@ header {
 
   img {
     height: 80px;
+  }
+}
+
+main {
+  section {
+    height: 100px;
+  }
+
+  .content {
+    background-color: $dark;
+  }
+
+  .banner {
+    background-color: $accenture;
+  }
+}
+
+footer {
+  .footer_up {
+    background-image: url("./assets/img/footer-bg.jpg");
+    background-size: cover;
+    height: 500px;
+  }
+
+  .footer_down {
+    background-color: $darkless;
+    height: 100px;
+    position: relative;
+    z-index: 1;
   }
 }
 </style>
