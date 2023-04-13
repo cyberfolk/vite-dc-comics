@@ -12,4 +12,9 @@ export default {
   <h1>{{ msg }}</h1>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+//@use "./assets/scss/partials/variables" as *;
+h1 {
+  color: red;
+}
+</style>
