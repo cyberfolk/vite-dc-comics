@@ -144,9 +144,32 @@ export default {
     <div class="footer_down mb-4">
       <div class="container">
         <div class="row">
-          <div class="col-6"></div>
+          <div class="col-6">
+            <button>SIGN-UP NOW!</button>
+          </div>
           <!-- /.col-6 -->
-          <div class="col-6"></div>
+          <div class="col-6">
+            <div class="d-flex align-items-center h-100 gap-4">
+              <div class="follow fs-5">FOLLOW US</div>
+              <ul class="list-inline d-flex gap-3 m-0">
+                <li>
+                  <a href="#"><img src="./assets/img/footer-facebook.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/img/footer-twitter.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/img/footer-youtube.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/img/footer-pinterest.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/img/footer-periscope.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
           <!-- /.col-6 -->
         </div>
         <!-- /.row -->
@@ -239,9 +262,22 @@ footer {
 
   .footer_down {
     background-color: $darkless;
-    height: 100px;
     position: relative;
     z-index: 1;
+    padding: 1.8rem 0;
+
+    button {
+      border: 2px solid $accenture;
+      background-color: transparent;
+      color: $light;
+      padding: 0.8rem;
+      font-weight: 500;
+    }
+    .follow {
+      font-weight: 500;
+      color: $accenture;
+      align-self: center;
+    }
   }
 }
 </style>
