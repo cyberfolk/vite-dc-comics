@@ -38,8 +38,39 @@ export default {
   </header>
 
   <main>
-    <section class="content"></section>
-    <section class="banner"></section>
+    <section class="content">
+      <div class="container"></div>
+      <!-- /.container -->
+    </section>
+    <!-- /.content -->
+    <section class="banner">
+      <div class="container">
+        <nav class="nav align-self-center">
+          <a class="nav-link" href="#" aria-current="page">
+            <img src="./assets/img/buy-comics-digital-comics.png" alt="" />
+            <span>DIGITAL COMICS</span>
+          </a>
+          <a class="nav-link" href="#">
+            <img src="./assets/img/buy-comics-merchandise.png" alt="" />
+            <span>DC MERCHANANDISE</span>
+          </a>
+          <a class="nav-link" href="#">
+            <img src="./assets/img/buy-comics-subscriptions.png" alt="" />
+            <span>SUBSCRIPTION</span>
+          </a>
+          <a class="nav-link" href="#">
+            <img src="./assets/img/buy-comics-shop-locator.png" alt="" />
+            <span>COMIC SHOP LOCATOR</span>
+          </a>
+          <a class="nav-link" href="#">
+            <img src="./assets/img/buy-dc-power-visa.svg" alt="" />
+            <div>DC POWER VISA</div>
+          </a>
+        </nav>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.banner -->
   </main>
 
   <footer>
@@ -156,16 +187,22 @@ header {
 }
 
 main {
-  section {
-    height: 100px;
-  }
-
   .content {
     background-color: $dark;
+    height: 100px;
   }
 
   .banner {
     background-color: $accenture;
+    nav {
+      height: 100%;
+      a {
+        font-family: "Bahnschrift SemiBold";
+        font-size: 0.9rem !important;
+        color: $light !important;
+        position: relative;
+      }
+    }
   }
 }
 
