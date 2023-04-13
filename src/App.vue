@@ -12,12 +12,12 @@ export default {
   <header class="mt-4 bg-white">
     <div class="container">
       <div class="row">
-        <div class="col-4 py-3 d-flex">
-          <img class="align-self-center" src="./assets/img/dc-logo.png" alt="dc-log" />
+        <div class="col-4 d-flex">
+          <img class="py-1 align-self-center h-75" src="./assets/img/dc-logo.png" alt="dc-log" />
         </div>
         <!-- /.col -->
         <div class="col-8 d-flex">
-          <nav class="nav align-self-center">
+          <nav class="nav align-self-center h-100">
             <a class="nav-link" href="#" aria-current="page">CHARACTERS</a>
             <a class="nav-link" href="#">COMICS</a>
             <a class="nav-link" href="#">MOVIES</a>
@@ -45,7 +45,7 @@ export default {
     <!-- /.content -->
     <section class="banner">
       <div class="container">
-        <nav class="nav align-self-center">
+        <nav class="nav align-self-center d-flex justify-content-around">
           <a class="nav-link" href="#" aria-current="page">
             <img src="./assets/img/buy-comics-digital-comics.png" alt="" />
             <span>DIGITAL COMICS</span>
@@ -62,9 +62,9 @@ export default {
             <img src="./assets/img/buy-comics-shop-locator.png" alt="" />
             <span>COMIC SHOP LOCATOR</span>
           </a>
-          <a class="nav-link" href="#">
-            <img src="./assets/img/buy-dc-power-visa.svg" alt="" />
-            <div>DC POWER VISA</div>
+          <a class="nav-link d-flex" href="#">
+            <img class="py-2" src="./assets/img/buy-dc-power-visa.svg" alt="" />
+            <div class="align-self-center">DC POWER VISA</div>
           </a>
         </nav>
       </div>
@@ -188,6 +188,7 @@ header {
     font-size: 0.9rem !important;
     color: $dark !important;
     position: relative;
+    line-height: 6; // use the number without units, because I say the total height of the line is 6 font size
   }
 
   .active {
@@ -198,14 +199,10 @@ header {
     content: "";
     position: absolute;
     right: 0;
-    bottom: -100%;
+    bottom: 0;
     height: 6px;
     width: 100%;
     background-color: $accenture;
-  }
-
-  img {
-    height: 80px;
   }
 }
 
@@ -217,13 +214,18 @@ main {
 
   .banner {
     background-color: $accenture;
+
     nav {
-      height: 100%;
       a {
         font-family: "Bahnschrift SemiBold";
         font-size: 0.9rem !important;
         color: $light !important;
         position: relative;
+        img {
+          margin: 2rem 0;
+          height: 60px;
+          padding-right: 1rem;
+        }
       }
     }
   }
