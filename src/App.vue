@@ -41,8 +41,8 @@ export default {
     <!-- /.content -->
     <section class="banner">
       <div class="container">
-        <nav class="nav align-self-center d-flex justify-content-around">
-          <a class="nav-link" href="#" aria-current="page">
+        <nav class="nav d-flex justify-content-around">
+          <a class="nav-link" href="#">
             <img src="./assets/img/buy-comics-digital-comics.png" alt="" />
             <span>DIGITAL COMICS</span>
           </a>
