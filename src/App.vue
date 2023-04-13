@@ -1,5 +1,15 @@
-<script setup></script>
+<script>
+export default {
+  data() {
+    return {
+      msg: "SPERIAMO FUNZIONI",
+    };
+  },
+};
+</script>
 
-<template></template>
+<template>
+  <h1>{{ msg }}</h1>
+</template>
 
 <style scoped></style>
