@@ -1,55 +1,11 @@
 <script>
+import pages from "../data/pages.js";
 export default {
   name: "SiteHeader",
   components: {},
   data() {
     return {
-      pages: [
-        {
-          name: "CHARACTERS",
-          href: "#",
-        },
-        {
-          name: "COMICS",
-          href: "#",
-        },
-        {
-          name: "MOVIES",
-          href: "#",
-        },
-        {
-          name: "TV",
-          href: "#",
-        },
-        {
-          name: "GAMES",
-          href: "#",
-        },
-        {
-          name: "COLLECTIBLES",
-          href: "#",
-        },
-        {
-          name: "GAMES",
-          href: "#",
-        },
-        {
-          name: "VIDEOS",
-          href: "#",
-        },
-        {
-          name: "FANS",
-          href: "#",
-        },
-        {
-          name: "NEWS",
-          href: "#",
-        },
-        {
-          name: "SHOP",
-          href: "#",
-        },
-      ],
+      pages: pages,
     };
   },
 
