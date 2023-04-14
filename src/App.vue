@@ -127,7 +127,7 @@ export default {
             <!-- /.row -->
           </div>
           <!-- /.col-6 -->
-          <div class="col-6">
+          <div class="col-6 d-flex justify-content-end">
             <img src="./assets/img/dc-logo-bg.png" alt="" />
           </div>
           <!-- /.col-6 -->
@@ -137,6 +137,7 @@ export default {
       <!-- /.container -->
     </div>
     <!-- /.footer_up -->
+
     <div class="footer_down mb-4">
       <div class="container">
         <div class="row">
@@ -145,7 +146,7 @@ export default {
           </div>
           <!-- /.col-6 -->
           <div class="col-6">
-            <div class="d-flex align-items-center h-100 gap-4">
+            <div class="d-flex justify-content-end align-items-center h-100 gap-4">
               <div class="follow fs-5">FOLLOW US</div>
               <ul class="list-inline d-flex gap-3 m-0">
                 <li>
