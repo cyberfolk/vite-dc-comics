@@ -10,11 +10,8 @@ export default {
 
 <template>
   <main>
-    <section class="content">
-      <div class="container"></div>
-      <!-- /.container -->
-    </section>
-    <!-- /.content -->
+    <div class="container"></div>
+    <!-- /.container -->
 
     <BannerVue />
   </main>
