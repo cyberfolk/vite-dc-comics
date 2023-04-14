@@ -9,7 +9,7 @@ export default {
   <header class="mt-4 bg-white">
     <div class="container">
       <div class="d-flex justify-content-between">
-        <img class="my-3" src="./assets/img/dc-logo.png" alt="dc-log" />
+        <img class="my-3" src="./../assets/img/dc-logo.png" alt="dc-log" />
         <!-- logo -->
         <nav class="nav">
           <a class="nav-link" href="#" aria-current="page">CHARACTERS</a>
