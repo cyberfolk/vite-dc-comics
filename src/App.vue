@@ -220,6 +220,7 @@ main {
         font-size: 0.9rem !important;
         color: $light !important;
         position: relative;
+        z-index: 1;
         img {
           margin: 2rem 0;
           height: 60px;
@@ -232,11 +233,12 @@ main {
 
 footer {
   .footer_up {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     background-image: url("./assets/img/footer-bg.jpg");
     background-size: cover;
-    height: 400px;
     color: $light;
+    position: relative;
 
     h2 {
       font-family: "Bahnschrift SemiBold";
@@ -247,17 +249,19 @@ footer {
       padding: 0;
       li {
         list-style: none;
+        line-height: 1.3;
         a {
           text-decoration: none;
           color: $secondary;
           font-size: 0.8rem;
+          line-height: 0;
         }
       }
     }
 
     img {
-      position: relative;
-      bottom: 15%;
+      position: absolute;
+      top: -24%;
     }
   }
 
