@@ -1,38 +1,13 @@
 <script>
+import SiteHeader from "./components/SiteHeader.vue";
 export default {
-  data() {
-    return {
-      msg: "SPERIAMO FUNZIONI",
-    };
+  components: {
+    SiteHeader,
   },
 };
 </script>
-
+<SiteHeader></SiteHeader>
 <template>
-  <header class="mt-4 bg-white">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-        <img class="my-3" src="./assets/img/dc-logo.png" alt="dc-log" />
-        <!-- logo -->
-        <nav class="nav">
-          <a class="nav-link" href="#" aria-current="page">CHARACTERS</a>
-          <a class="nav-link" href="#">COMICS</a>
-          <a class="nav-link" href="#">MOVIES</a>
-          <a class="nav-link" href="#">TV</a>
-          <a class="nav-link" href="#">GAMES</a>
-          <a class="nav-link" href="#">COLLECTIBLES</a>
-          <a class="nav-link" href="#">VIDEOS</a>
-          <a class="nav-link active" href="#">FANS</a>
-          <a class="nav-link" href="#">NEWS</a>
-          <a class="nav-link" href="#">SHOP</a>
-        </nav>
-        <!-- /.d-flex -->
-      </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </header>
-
   <main>
     <section class="content">
       <div class="container"></div>
@@ -179,33 +154,6 @@ export default {
 
 <style lang="scss">
 @use "./assets/scss/partials/variables" as *;
-header {
-  img {
-    height: 80px;
-  }
-  a {
-    font-family: "Bahnschrift SemiBold";
-    font-size: 0.9rem !important;
-    color: $dark !important;
-    position: relative; // to use the active class
-    line-height: 7; // use the number without units, because I say the total height of the line is 6 font size
-  }
-
-  .active {
-    color: $accenture !important;
-  }
-
-  .active:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 6px;
-    width: 100%;
-    background-color: $accenture;
-  }
-}
-
 main {
   .content {
     background-color: $dark;
