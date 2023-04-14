@@ -70,7 +70,7 @@ export default {
   </main>
 
   <footer>
-    <div class="footer_up">
+    <div class="footer_up py-5 position-relative">
       <div class="container">
         <div class="row">
           <div class="col-6">
@@ -128,7 +128,7 @@ export default {
           </div>
           <!-- /.col-6 -->
           <div class="col-6 d-flex justify-content-end">
-            <img src="./assets/img/dc-logo-bg.png" alt="" />
+            <img class="position-absolute" src="./assets/img/dc-logo-bg.png" alt="" />
           </div>
           <!-- /.col-6 -->
         </div>
@@ -187,7 +187,7 @@ header {
     font-family: "Bahnschrift SemiBold";
     font-size: 0.9rem !important;
     color: $dark !important;
-    position: relative;
+    position: relative; // to use the active class
     line-height: 7; // use the number without units, because I say the total height of the line is 6 font size
   }
 
@@ -234,12 +234,9 @@ main {
 
 footer {
   .footer_up {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
     background-image: url("./assets/img/footer-bg.jpg");
     background-size: cover;
     color: $light;
-    position: relative;
 
     h2 {
       font-family: "Bahnschrift SemiBold";
@@ -261,7 +258,6 @@ footer {
     }
 
     img {
-      position: absolute;
       top: -24%;
     }
   }
