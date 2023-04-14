@@ -8,10 +8,4 @@ export default {
   <div class="jumbotron"></div>
 </template>
 
-<style scoped>
-.jumbotron {
-  background-image: url("../assets/img/jumbotron.jpg");
-  background-size: cover;
-  height: 400px;
-}
-</style>
+<style scoped></style>
