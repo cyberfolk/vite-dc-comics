@@ -12,12 +12,6 @@ export default {
       dc_comicss: dc_comicss,
     };
   },
-
-  methods: {
-    getImageUrl(nome) {
-      return new URL(`../assets/img/${nome}`, import.meta.url).href;
-    },
-  },
 };
 </script>
 

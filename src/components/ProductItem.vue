@@ -5,6 +5,7 @@ export default {
     src: String,
     title: String,
   },
+  //Don't use method getImageUrl because the images is hosted on internet
 };
 </script>
 
@@ -16,18 +17,3 @@ export default {
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-@use "../assets/scss/partials/variables" as *;
-img {
-  height: 180px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.title {
-  text-transform: uppercase;
-  color: $light;
-  font-size: 0.8rem;
-}
-</style>
