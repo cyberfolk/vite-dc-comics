@@ -15,11 +15,7 @@ export default {
 <template>
   <main>
     <JumbotronVue />
-    <div class="container">
-      <ProductList />
-    </div>
-    <!-- /.container -->
-
+    <ProductList />
     <BannerVue />
   </main>
 </template>

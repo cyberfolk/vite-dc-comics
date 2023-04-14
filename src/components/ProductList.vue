@@ -16,7 +16,10 @@ export default {
 </script>
 
 <template>
-  <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-5">
-    <ProductItem :src="comic.thumb" :title="comic.series" v-for="comic in dc_comicss" />
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-5">
+      <ProductItem :src="comic.thumb" :title="comic.series" v-for="comic in dc_comicss" />
+    </div>
   </div>
+  <!-- /.container -->
 </template>
